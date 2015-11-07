@@ -29,6 +29,18 @@
     ga('send', 'pageview');
         
     </script>
+    
+    <!-- Azure Application Insights -->
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        }({
+            instrumentationKey:"7deaad1e-1e7f-40da-ae98-29656c33220c"
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
 
 </head>
     
@@ -83,14 +95,20 @@
 
         <!-- Portfolio Item Row -->
         <div class="row">
-            <div class="col-lg-6 responsive-iframe-container">
-                <h3>Print Calendar:</h3>
-                <div class="responsive-iframe-container">
-                    <iframe src="https://calendar.google.com/calendar/embed?            showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=mn3dprinting%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" style="border-width:0" width="550" height="500" frameborder="0" scrolling="no"></iframe>
-                </div>
+            <div class="col-lg-3">
+                
             </div>
-            <div class="col-lg-6">
-                <h3>Gallery Coming Soon!</h3>
+            
+            <div class="col-lg-3">
+                
+            </div>
+            
+            <div class="col-lg-3">
+                
+            </div>
+            
+            <div class="col-lg-3">
+                
             </div>
 
         </div>   
